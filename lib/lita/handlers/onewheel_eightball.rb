@@ -6,6 +6,7 @@ module Lita
       # insert handler code here
 
       route(/^eightball/i, :handle_eightball, command: true)
+      route(/^8ball/i, :handle_eightball, command: true)
 
       def handle_eightball(response)
         response.reply MagicEightball.shake
